@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Img move</title>
+</head>
+<body>
+  <img id="one" src="run1.png">
+  <script>
+    var data = ['run1.png', 'run2.png', 'run3.png'];
+    var index = 0;
+    var mLeft = 0;
+    
+    var move = setInterval(function(){
+      // 이미지가 run3.png가 되면 다시 run1.png로 돌아가야함 -> if문
+      /*
+        index를 계속 증가
+        만약 index가 3이면 index를 0으로
+        document.querySelctor('이미지').src = 이미지소스(index이용)
+      */
+      index++;
+      if(index == 3){
+        index = 0;
+      }
+      document.querySelector('#one').src = data[index];
+
+      // 데이터타입이 num인 변수를 활용하여 margin값을 증가시켜야함
+      // setInterval 안에 있기 때문에 그게 0.1초마다 반복
+
+
+      /*
+        mLeft를 계속 증가
+        document.querySelctor('이미지').style.marginLeft = mLeft
+      */
+      mLeft = mLeft + 10;
+      document.querySelector('#one').style.marginLeft = mLeft + 'px';
+    }, 100);
+  </script>
+</body>
+</html>

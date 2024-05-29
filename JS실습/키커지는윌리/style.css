@@ -1,0 +1,129 @@
+body {
+	
+	margin: 0;
+	padding: 0;
+
+	background-image: url(bg.png);	
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+#logo {
+
+	width: 180px;
+	height: 180px;
+
+	background-image: url(logo.png);
+
+	margin: 40px;
+}
+
+#wally {
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+
+	width: 280px;
+	margin-left: -180px;
+}
+
+#wally #face {
+
+	width: 100px;
+	height: 130px;
+
+	background-image: url(face.png);
+
+	position: relative;
+
+	left: 130px;
+	top: 80px;
+
+	z-index: -1;
+}
+
+#wally #face.cry {
+
+	background-position:right;
+}
+
+
+
+#wally #body {
+
+	width: 280px;
+	height: 320px;
+
+	background-image: url(body.png);
+}
+
+#wally #leg {
+
+	width: 280px;
+	height: 185px;
+
+	background-image: url(leg.png);
+	background-position: bottom;
+}
+
+#control {
+
+	overflow: auto;
+
+	width: 180px;
+	height: 180px;
+
+	margin: 40px;
+	border-radius: 100%;
+
+	background-color: #d6423e;
+	position: relative;	
+}
+
+#control a {
+	
+	display: block;
+
+	width: 180px;
+	height: 25px;
+
+	margin: 20px 0;
+
+	background-image: url(arrow.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+	opacity: 0.8;
+}
+
+#control a:hover {
+
+	opacity: 1;
+}
+
+#control a#arr-bottom {
+
+	background-position: bottom center;
+
+	position: absolute;
+	bottom: 0;
+}
+
+#control #height {
+
+	width: 150px;
+	height: 50px;
+
+	line-height: 50px;
+	margin: 0 auto;
+	border-radius: 20px;
+
+	background-color: #fff;
+	color: #d4433b;
+	font-size: 25pt;
+	font-family: 'georgia';
+
+	text-align: center;
+} 
+
