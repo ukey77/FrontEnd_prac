@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <h2>STAR 출력하기</h2>
+  <script>
+
+    // 1~5 순차적으로 * 출력하긴
+/*     let num = 5;
+    for (let i = 0; i <= num; i++) {
+      let star = '';
+      for (let j = 0; j <= i; j++) {
+        star += '*';
+
+      }
+      console.log(star);
+    } */
+
+
+    // 거꾸로
+    for(let i=0; i<=5; i++){
+      let star = '';
+      for(let j=5; j>=i; j--){
+        star += '*';
+      }
+      console.log(star)
+    };
+  </script>
 </body>
+
 </html>
